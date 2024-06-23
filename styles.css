@@ -1,0 +1,109 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    height:180px;
+}
+.avatar:hover{
+    transform: scale(1.1);
+    border-radius: 60000px;
+}
+h3:hover{
+    color:#FFCF99;
+}
+
+p{
+   
+    display: inline-block;
+    width: 256px;
+    height: 36px;
+}
+
+
+p:hover{
+    color:#FF8F1F;
+}
+
+p:hover::after{
+    display: inline-block;
+    color:#FFCF99;
+    transform: scale(1.1);
+    content: "!!!";
+}
+p:hover::before{
+    display: inline;
+    color:#FFCF99;
+    content: "ON TRAINING ";
+}
+
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #F15156;
+    color: #2b2839;
+    border-bottom: 8px dashed #FFC07F;
+    border-radius: 30px;
+    box-shadow: 10px 19px 2px #204260;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+/*ANIMATIONS*/
+@keyframes pop-effect {
+    0%{
+        transform: scale(1);
+        color:red;
+        
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+        
+    }
+}
+
+.pop-text {  
+    animation: pop-effect 0.25s ease 50ms infinite alternate;
+    animation-play-state: paused;
+}
+
+.pop-text:hover {  
+    animation: pop-effect 0.25s ease 50ms infinite alternate;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
